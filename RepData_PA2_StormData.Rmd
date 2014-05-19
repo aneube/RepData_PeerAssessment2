@@ -1,0 +1,15 @@
+# Reproducible Research: Peer Assessment 2
+
+Storm events that have the biggest health and economic consequences in USA
+==========================================================================
+
+## Loading and preprocessing the data
+Load the input data file:
+```{r results='hide',cache=TRUE}
+# Extract data from the archive
+data <- read.csv("repdata-data-StormData.csv.bz2")
+data_dim <- dim(data)
+head(data)
+```
+
+Data extracted: dim `r data_dim`.
